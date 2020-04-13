@@ -5,7 +5,7 @@
   --title-font-normal: 100;
   --title-font-strong: 900;
   --title-color: #313131;
-  --background-gray: #ecebeb;
+  --background-gray: #ecebeb09;
 }
 
 * {
@@ -241,7 +241,7 @@ blockquote:before {
 
 #navbar {
     padding: 10px 50px;
-    background-color: var(--background-gray); /* Black background color */
+    background-color: white; /* Black background color */
     position: fixed; /* Make it stick/fixed */
     top: -100px; /* Hide the navbar 50 px outside of the top view */
     width: 105%; /* Full width */
