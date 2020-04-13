@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:200,500&display=swap");
+:root {
+  --arecco: #C22F2A;
+  --title-font: "Oswald";
+  --title-font-normal: 100;
+  --title-font-strong: 900;
+  --title-color: #313131;
+  --background-gray: #ecebeb;
+}
+
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:0
+}
+.logo{
+font-family: "Abril Fatface", serif;
+font-weight: 900;
+font-size:2em;
+color: var(--arecco)
+}
+
+
+.header_title {
+  font-family: "Oswald", sans-serif;
+  margin: 0 auto;
+  color: hsl(207, 95%, 8%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 100%; */
+}
+
+.header_title__resaltado {
+  min-width: 20px;
+}
+
+.header-title-image {
+  position: absolute;
+  bottom: 0;
+}
+
+.reseña {
+  display: flex;
+  /* background: var(--background-gray) */
+}
+
+.libro {
+  max-width: 397px;
+}
+.padded-dropcap {
+  padding-right: 0.1em;
+  float: left;
+  position: relative;
+  top: -20px;
+  margin-bottom: -0.8em;
+  font-size: 4.7em;
+  color: var(--arecco);
+  font-family: var(--title-font);
+}
+
+.nombre{
+    font-family: "Oswald";
+    font-size: 40px;
+}
+
+.apellido{
+    color: var(--title-color)
+}
+.mapa{
+    width: 100%;
+    background-image: url(images/mapa.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 40% auto;
+    /* position: absolute; */
+}
+
+#reseña, #bio, #beneficios{
+  background: var(--background-gray);
+  margin-bottom: 20px;
+}
+
+footer{
+    font-size: 1.2em;
+    font-family: var(--title-font);
+    color: hsl(221, 51%, 16%);
+    padding: 5px 10px
+}
+/* estilos del hero */
+body {
+  font: 400 12px/1 Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  /* background: -webkit-linear-gradient(90deg, #4CB8C4 10%, #3CD3AD 90%); /* Chrome 10+, Saf5.1+ */
+}
+.page {
+  margin: 0 auto;
+  /* padding-top:20em; */
+  width: 800px;
+  position: relative;
+}
+#home-news {
+  font-size: 40px;
+  text-align: center;
+  color: #464646;
+  height: 45px;
+  line-height: 45px;
+  overflow: hidden;
+  position: relative;
+}
+.home_header {
+  position: absolute;
+  width: 100%;
+  /* z-index: 99; */
+  color: #000;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  font-family: "Oswald";
+}
+span {
+  font-weight: 400;
+  color: var(--title-color);
+}
+.home_header_on {
+  /* z-index: 100; */
+}
+.home_header strong {
+  color: var(--arecco);
+}
+.home_header span,
+.home_header strong {
+  position: relative;
+  top: -50px;
+}
+.home_header_on *:nth-child(1) {
+  top: 0;
+  -webkit-transition: top 0.6s ease-in-out;
+  -moz-transition: top 0.6s ease-in-out;
+  transition: top 0.6s ease-in-out;
+}
+.home_header_on *:nth-child(2) {
+  top: 0;
+  -webkit-transition: top 0.6s ease-in-out 0.15s;
+  -moz-transition: top 0.6s ease-in-out 0.15s;
+  transition: top 0.6s ease-in-out 0.15s;
+}
+.home_header_on *:nth-child(3) {
+  top: 0;
+  -webkit-transition: top 0.6s ease-in-out 0.3s;
+  -moz-transition: top 0.6s ease-in-out 0.3s;
+  transition: top 0.6s ease-in-out 0.3s;
+}
+.home_header_out *:nth-child(1) {
+  top: 50px;
+  -webkit-transition: top 0.6s ease-in-out;
+  -webkit-transition: top 0.6s ease-in-out;
+  -moz-transition: top 0.6s ease-in-out;
+}
+.home_header_out *:nth-child(2) {
+  top: 50px;
+  -webkit-transition: top 0.6s ease-in-out 0.15s;
+  -moz-transition: top 0.6s ease-in-out 0.15s;
+  transition: top 0.6s ease-in-out 0.15s;
+}
+.home_header_out *:nth-child(3) {
+  top: 50px;
+  -webkit-transition: top 0.6s ease-in-out 0.3s;
+  -moz-transition: top 0.6s ease-in-out 0.3s;
+  transition: top 0.6s ease-in-out 0.3s;
+}
+/* termina animacion de texto */
+
+blockquote {
+  display: block;
+  border-width: 2px 0;
+  border-style: solid;
+  border-color: #eee;
+  padding: 1.5em 0 0.8em;
+  margin: 1.5em 0;
+  position: relative;
+  font-size: 1.1em;
+}
+blockquote:before {
+  content: "\201C";
+  position: absolute;
+  top: 0em;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 3rem;
+  height: 2rem;
+  font: 6em/1.08em "PT Sans", sans-serif;
+  color: #666;
+  text-align: center;
+}
+.blockquote-firma {
+  content: "\2013 \2003"attr(cite);
+  display: block;
+  text-align: right;
+  font-size: 0.875em;
+  color: #e74c3c;
+}
+/* blockquote:after {
+  content: "\201D";
+  position: absolute;
+  bottom: -.35em;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  background-color: var(--background-gray);
+  width: 3rem;
+  height: 2rem;
+  font: 6em/1.08em "PT Sans", sans-serif;
+  color: #666;
+  text-align: center;
+  padding-bottom: .5em;
+  z-index: 2;
+} */
+
+.blockquote-date {
+  /* position: relative; */
+  /* top:-10pxM */
+  font-style: italic;
+  margin-top: 5px;
+  text-align: center;
+  content: "\2013 \2003";
+  display: block;
+  /* text-align: right; */
+  font-size: 0.875em;
+  color: var();
+}
+
+#navbar {
+    padding: 10px 50px;
+    background-color: var(--background-gray); /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    top: -100px; /* Hide the navbar 50 px outside of the top view */
+    width: 105%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+    -webkit-box-shadow: -1px 10px 5px -5px rgba(0,0,0,0.08);
+-moz-box-shadow: -1px 10px 5px -5px rgba(0,0,0,0.08);
+box-shadow: -1px 10px 5px -5px rgba(0,0,0,0.08);
+  }
+  
+  /* Style the navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    color: var(--title-color);
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+  }
+  
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 0 20px ;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+.rojo{
+  color: var(--arecco)
+}
