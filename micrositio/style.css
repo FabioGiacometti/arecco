@@ -49,6 +49,9 @@ color: var(--arecco)
 .header-title-image {
   position: absolute;
   bottom: 0;
+  margin: 0 auto;
+  width: 80%;
+  justify-self: center;
 }
 
 .reseña {
@@ -279,7 +282,7 @@ box-shadow: -1px 10px 5px -5px rgba(0,0,0,0.08);
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: #111; /* Black*/
+    background-color: var(--title-color); /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -303,7 +306,7 @@ box-shadow: -1px 10px 5px -5px rgba(0,0,0,0.08);
   /* Position and style the close button (top right corner) */
   .sidenav .closebtn {
     position: absolute;
-    top: 0;
+    top: 2em;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
@@ -311,8 +314,8 @@ box-shadow: -1px 10px 5px -5px rgba(0,0,0,0.08);
   
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
   #main {
-    transition: margin-left .5s;
-    padding: 0 20px ;
+    transition: transform .5s;
+    /* padding: 0 20px ; */
   }
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
