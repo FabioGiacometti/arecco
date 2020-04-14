@@ -11,7 +11,7 @@
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
 </head>
 
-<body class="w-full p-8 md:p-0">
+<body class="w-full p-8 md:p-0 text-lg">
     <div id="mySidenav" class="sidenav pt-20">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <ul class=" ">
@@ -28,11 +28,11 @@
     </div>
     <div id="mobile-header" class="fixed -ml-8 w-full md:hidden top-0 bg-white p-4 shadow-md z-10">
         <a href="#hero"><span class="logo">ImaginAcción</span></a>
-        <img src="images/BURGER.png" alt="burguer" class="absolute " style="top:1em; right: 2em; height: 30px;"
+        <img src="images/BURGER.png" alt="burguer" class="absolute " style="top:.9em; right: 1em; height: 30px;"
             onclick="openNav()">
     </div>
     <main id="main">
-        <header id="hero-desktop" class=" items-center hidden md:flex flex-col">
+        <header id="hero-desktop" class=" items-center hidden md:flex relative">
             <div id="navbar" class="justify-center md:justify-between hidden md:block">
                 <a href="#hero"><span class="logo">ImaginAcción</span></a>
                 <ul class="hidden md:flex">
@@ -170,7 +170,7 @@
                 </div>
             </section>
         </div>
-        <footer class="flex flex-row justify-between items-center h-8">
+        <footer class="flex flex-row justify-between items-center h-8 text-sm">
             <a href="http://www.ross.com.ar" class="ml-4">
                 <h3> ROSS | Outside the Box</h3>
             </a>

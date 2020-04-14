@@ -19,6 +19,7 @@ header {
   width: 100%;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin:0
@@ -26,7 +27,7 @@ header {
 .logo{
 font-family: "Abril Fatface", serif;
 font-weight: 900;
-font-size:2em;
+font-size:1.4em;
 color: var(--arecco)
 }
 
@@ -105,6 +106,7 @@ footer{
 body {
   font: 400 12px/1 Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
   /* background: -webkit-linear-gradient(90deg, #4CB8C4 10%, #3CD3AD 90%); /* Chrome 10+, Saf5.1+ */
 }
 .page {
