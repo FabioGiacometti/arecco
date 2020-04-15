@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imaginacción</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <ul class="flex flex-col">
+    	            <li>
+    	                <a href="#reseña">Libro</a>
+    	            </li>
+    	            <li>
+    	                <a href="#bio">Bio</a>
+    	            </li>
+    	            <li>
+    	                <a href="#beneficios">Beneficios</a>
+    	            </li>
+    	        </ul>
+      </div>
+    <main id="main">
+    	<header id="hero">
+    	    <div id="navbar" class=" justify-between">
+    	        <a href="#hero"><span class="logo">ImaginAcción</span></a>
+    	        <ul class="flex ">
+    	            <li>
+    	                <a href="#reseña">Libro</a>
+    	            </li>
+    	            <li>
+    	                <a href="#bio">Bio</a>
+    	            </li>
+    	            <li>
+    	                <a href="#beneficios">Beneficios</a>
+    	            </li>
+    	        </ul>
+    	      </div>
+    	    <!-- <h1 class="header_title">El liderazgo se está descentralizando, </br>
+    	    <span class="header_title__resaltado">saliendo del ego.</span></h1> -->
+    
+    	    <!-- Contenedor de animacion de texto -->
+    	    <img src="images/BURGER.png" alt="burguer" class="absolute" style="top:20px; right: 20px; height: 30px;" onclick="openNav()">
+    	    <div class="page">
+    	        <div id="home-news">
+    	            <div class="home_header">
+    	                <span>El liderazgo se está </span>
+    	                <strong>descentralizando</strong>
+    	            </div>
+    	            <div class="home_header">
+    	                <span>Gestión con </span>
+    	                <strong>sentido de propósito</strong>
+    	            </div>
+    	            <div class="home_header">
+    	                <span>Saliendo </span>
+    	                <strong>DEL EGO</strong>
+    	            </div>
+    	        </div>
+    	    </div>
+    
+    	    <img class="header-title-image" src="images/dos-ojos.png" alt="" />
+    	</header>
+    	<div class="mapa">
+    	    <section id="reseña" class="reseña flex items-center justify-evenly p-32">
+    	        <div class="book-container w-1/3 flex flex-col items-center" id="book-container ">
+    	            <img src="images/mockup Libro Arecco posta (1).png" alt="libro imaginaccion" class="libro" />
+    	            <a mp-mode="dftl" href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=544307286-5d98cc75-c4ed-4497-9240-5d6add41b832" name="MP-payButton" class='red-ar-m-rn-none'>   Comprar    </a>
+    	            
+    	        </div>
+    	        <div class="w-1/3 ml-16 leading-relaxed">
+    	            <p>
+    	                <span class="padded-dropcap">E</span>sto, en mi opinión, generará una
+    	                transformación en las organizaciones que puede provocar la caída del
+    	                modelo hegemónico de poder para hacerlo más participativo y personal.
+    	                ¿Cómo será este liderazgo descentralizado en las personas? La
+    	                respuesta viene desde adentro y la llamo liderazgo con sentido de
+    	                propósito, una forma de liderar escuchando a nuestra inteligencia
+    	                espiritual. En este libro, exploraremos los alcances de esta
+    	                inteligencia: su vinculación al talento, a la esencia del individuo, a
+    	                la conexión con su conciencia.
+    	            </p>
+    	            <p class="mt-4">
+    	                Este programa fue probado en diferentes personas y empresas a lo largo
+    	                de 15 años dando resultados exitosos. Te propongo un recorrido pensado
+    	                para monitorear nuestras imágenes internas, diseñar nuestro futuro y
+    	                reflexionar sobrecuál es nuestro propósito de vida.
+    	                <blockquote>
+    	                    Te invito a
+    	                    embarcarte en esta aventura, donde la imaginación y la acción se
+    	                    conjugarán para acercarnos al mundo que soñamos. ¡Buen viaje!
+    	                    <span class="blockquote-firma">Marcelo Javier Arecco</span>
+    	                </blockquote>
+    	            </p>
+    	            <span class="blockquote-date">Buenos Aires, 02 02 20 20</span>
+    	        </div>
+    	    </section>
+    	    <section id="bio" class="flex items-center justify-evenly p-32">
+    	        <div class="w-2/3 ml-16 leading-relaxed">
+    	            <span class="nombre primer_nombre">Marcelo Javier </span><strong class="nombre apellido">Arecco</strong>
+    	            <p class="mr-32">
+    	                Es coach ontológico internacional, máster en Psicología Organizacional y
+    	                Gerenciamiento y Licenciado en Relaciones Industriales. Cursó el
+    	                Doctorado enSociología Laboral.Es coautor del libro Recursos humanos
+    	                (Ediciones Machi, 1993, 1996 y 2004; Pearson, 2010) y redactor frecuente
+    	                en las revistas Managemente Herald y Factor Humano en la Empresa. Fue
+    	                profesor de tiempo completo en la Universidad Argentina de la Empresa y
+    	                coordinador de la carrera de Recursos Humanos y del Centro de Estudios
+    	                Laborales en la misma universidad.
+    	            </p>
+    	        </div>
+    	        <img src="images/retrato-arecco.png" alt="retrato arecco" class="w-64">
+    	    </section>
+    	    <section id="beneficios" class="flex items-center justify-evenly p-32">
+    	        <div>
+    	            <a mp-mode="dftl" href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=544307286-5d98cc75-c4ed-4497-9240-5d6add41b832" name="MP-payButton" class='red-ar-l-rn-arall'>Ordenar</a>
+    	            
+    	        </div>
+    	        <div>
+    	            <span class="nombre primer_nombres">Comprando tu copia de Imaginacción:</span>
+    	            <ul class="mt-8 leading-relaxed list-disc">
+    	                <li>
+    	                    Te anotas a la lista de difusion de novedades de Marcelo Arecco.
+    	                </li>
+    	                <li>
+    	                    Participas de descuentos para ingreso a sus eventos/seminarios
+    	                </li>
+    	                <li>Marcelo te seguira en redes Sociales</li>
+    	                <li>Seras parte de la plataforma de formacion de OWNERSHIP</li>
+    	                <li>Entre otros beneficios</li>
+    	            </ul>
+    	        </div>
+    	    </section>
+    	</div>
+    	<footer class="flex flex-row justify-between items-center h-8">
+    	    <a href="http://www.ross.com.ar" class="ml-4">
+    	        <h3> ROSS | Outside the Box</h3>
+    	    </a>
+    	    <img src="images/logoOwnership1.png" alt="" />
+    	    <div>2020</div>
+    	</footer>
+    	
+    </main>
+    <script type="text/javascript">
+    (function(){function $MPC_load(){window.$MPC_loaded !== true && (function(){var s = document.createElement("script");s.type = "text/javascript";s.async = true;s.src = document.location.protocol+"//secure.mlstatic.com/mptools/render.js";var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);window.$MPC_loaded = true;})();}window.$MPC_loaded !== true ? (window.attachEvent ?window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;})();
+    </script>
+    <script src="./index.js"></script>
+    <script type="text/javascript">
+    (function(){function $MPC_load(){window.$MPC_loaded !== true && (function(){var s = document.createElement("script");s.type = "text/javascript";s.async = true;s.src = document.location.protocol+"//secure.mlstatic.com/mptools/render.js";var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);window.$MPC_loaded = true;})();}window.$MPC_loaded !== true ? (window.attachEvent ?window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;})();
+    </script>
+</body>
+
+</html>
